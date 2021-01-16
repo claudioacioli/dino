@@ -1,0 +1,25 @@
+{
+  "name": "dino",
+  "version": "1.0.0",
+  "description": "Udacity Dinosaurs Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudioacioli/dino.git"
+  },
+  "keywords": [
+    "udacity",
+    "dinosaurs",
+    "javascript",
+    "nanodegree"
+  ],
+  "author": "Claudio Acioli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudioacioli/dino/issues"
+  },
+  "homepage": "https://github.com/claudioacioli/dino#readme"
+}
