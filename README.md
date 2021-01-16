@@ -18,3 +18,7 @@ cd dino
 ```bash
 npm i
 ```
+4. Generate the production files:
+```bash
+npm run build
+```
