@@ -2,9 +2,9 @@
 
 This is a Udacity project from JavaScript NanoDegree.
 
-## Development Setup
+## Setup
 
-To view this on your local machine, please follow the steps below:
+To view this on your local machine, please follow the steps bellow to prepare your environment:
 
 1. Clone this repository:
 ```bash
@@ -16,9 +16,20 @@ cd dino
 ```
 3. Install the dependencies:
 ```bash
-npm i
+npm install
 ```
-4. Generate the production files:
+
+### Run as Production
+
+To run:
+
+1. Generate the production files:
 ```bash
 npm run build
 ```
+2. Run as server with:
+```bash
+npm start
+```
+
+Enjoy
