@@ -2,7 +2,7 @@
 
 This is a Udacity project from JavaScript NanoDegree.
 
-# Development Setup
+## Development Setup
 
 To view this on your local machine, please follow the steps below:
 
