@@ -1,9 +1,21 @@
 import './styles/app.css';
+import data from './js/dino.json'; 
+import AnimalSpec from './js/AnimalSpec';
+import Inventory from './js/Inventory';
 
-function component() {
-  const element = document.createElement('div');
-  element.innerHTML = ['Hello', 'World'].join(' ');
-  return element;
-}
+(function(){
+  
+  const inventory = new Inventory();
+  for(const {species, weight, height, diet, where, when, fact} of data.Dinos) {
+    const spec = new AnimalSpec(weight, height, diet);
+    inventory.addDino(species, where, when, fact, spec);
+  }
 
-document.body.appendChild(component());
+  console.log(
+    JSON.stringify(
+      inventory.valueOf()
+    )
+  );
+  
+
+})();
