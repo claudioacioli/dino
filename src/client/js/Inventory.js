@@ -1,19 +1,18 @@
 import Dino from './Dino';
 import AnimalSpec from './AnimalSpec';
 
-function Inventory() {
-  this.dinosaurs = [];
-}
+const inventory = (function(){
+  const dinosaurs = [];
 
-Inventory.prototype.addDino = function(species, where, when, fact, spec) {
-  const dino = new Dino(species, where, when, fact, spec);
-  this.dinosaurs.push(dino);
-};
+  function add(species, where, when, fact, spec) {
+    const dino = new Dino(species, where, when, fact, spec);
+    dinosaurs.push(dino);
+  }
 
-Inventory.prototype.compare = function(spec) {
-  if(!(spec instanceof AnimalSpec))
-    throw new Error('Invalid AnimalSpect object');
+  return {
+    addDino: add
+  };
 
-};
+})();
 
-export default Inventory;
+export default inventory;
