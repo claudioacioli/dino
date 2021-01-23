@@ -9,8 +9,13 @@ const inventory = (function(){
     dinosaurs.push(dino);
   }
 
+  function getAll() {
+    return dinosaurs;
+  }
+
   return {
-    addDino: add
+    addDino: add,
+    getAllDinos: getAll
   };
 
 })();
