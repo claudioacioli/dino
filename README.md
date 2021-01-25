@@ -19,6 +19,16 @@ cd dino
 npm install
 ```
 
+### Run as Development
+
+To run:
+
+1. Start a development server:
+```bash
+npm run start-dev
+```
+All changes will be show on your browser, enjoy it!
+
 ### Run as Production
 
 To run:
@@ -31,5 +41,6 @@ npm run build
 ```bash
 npm start
 ```
+3. Open on your browser at http://localhost:3000
 
-Enjoy
+Enjoy it!
