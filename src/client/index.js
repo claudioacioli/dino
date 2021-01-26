@@ -8,8 +8,8 @@ import gridComponent from './js/grid';
   
   const
     // Elements
-    formElement = document.querySelector('form'),
-    buttonElement = document.querySelector('#btn'),
+    formElement = document.getElementById('dino-compare'),
+    buttonElement = document.getElementById('btn'),
     
     // Helpers
     initObjects = () => {
