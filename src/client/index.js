@@ -10,6 +10,10 @@ import gridComponent from './js/grid';
     // Elements
     formElement = document.getElementById('dino-compare'),
     buttonElement = document.getElementById('btn'),
+    feetElement = document.getElementById('feet'),
+    inchesElement = document.getElementById('inches'),
+    weightElement = document.getElementById('weight'),
+    dietElement = document.getElementById('diet'),
     
     // Helpers
     initObjects = () => {
@@ -17,6 +21,16 @@ import gridComponent from './js/grid';
         const spec = new AnimalSpec(weight, height, diet);
         inventory.addDino(species, where, when, fact, spec);
       }
+    },
+
+    // Handlers
+    
+    chooseFeet = e => {
+      inchesElement.disabled = e.target.value.length > 0;
+    },
+
+    chooseInches = e => {
+      feetElement.disabled = e.target.value.length > 0;
     },
 
     // Render Functions
@@ -35,6 +49,16 @@ import gridComponent from './js/grid';
 
   initObjects();
 
+  feetElement.addEventListener("change", chooseFeet);
+  feetElement.addEventListener("keypress", chooseFeet);
+  feetElement.addEventListener("paste", chooseFeet);
+  feetElement.addEventListener("cut", chooseFeet);
+
+  inchesElement.addEventListener("change", chooseInches);
+  inchesElement.addEventListener("keypress", chooseInches);
+  inchesElement.addEventListener("paste", chooseInches);
+  inchesElement.addEventListener("cut", chooseInches);
+  
   formElement.addEventListener("submit", function submitForm(e) {
     e.preventDefault();
     formElement.classList.toggle("hide");
